@@ -81,7 +81,7 @@ const config = {
             activeBaseRegex: `/blog`,
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/MetaHut/code-works',
             label: 'GitHub',
             position: 'right',
           },

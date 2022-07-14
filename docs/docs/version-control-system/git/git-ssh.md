@@ -55,6 +55,8 @@ Host xxx
 
 右上角头像 --> Settings --> SSH and GPG keys --> New SSH key
 
+![New SSH key](img/github-add-ssh-key.png)
+
 复制 `~/.ssh/id_rsa_*.pub` 文件内容到key输入框，Title 随意填写 --> Add SSH key
 
 * 本地测试验证SSH免密
