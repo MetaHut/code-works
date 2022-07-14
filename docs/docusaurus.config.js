@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Code Works',
   tagline: 'Dinosaurs are cool',
   url: 'https://metahut.github.io',
   baseUrl: '/code-works/',
@@ -57,19 +57,29 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Code Works',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
+            to: '/',
+            position: 'right',
+            label: 'Home',
+            activeBaseRegex: `^/$`,
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            position: 'right',
+            label: 'Document',
+            to: '/docs/intro',
+          },
+          {
+            to: '/blog',
+            label: 'Blog',
+            position: 'right',
+            activeBaseRegex: `/blog`,
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
